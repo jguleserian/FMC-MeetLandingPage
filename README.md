@@ -37,7 +37,7 @@ Below are listed the screenshots of the desktop only. Screenshots of the tablet 
 ### Links
 
 - Solution URL: [GitHub Repository: FMC-Meet-Landing-Page](https://github.com/jguleserian/FMC-MeetLandingPage.git)
-- Live Site URL: [Add live site URL here](https://jguleserian.github.io/FMC-MeetLandingPage/)
+- Live Site URL: [GitHub Pages for FMC-MeetLandingPage](https://jguleserian.github.io/FMC-MeetLandingPage/)
 
 ## My process
 
