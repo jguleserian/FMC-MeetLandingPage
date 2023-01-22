@@ -73,7 +73,7 @@ I think I am ready to handle some more advanced css concepts. I have a plan to m
 ## Author
 
 - Website - [@jguleserian](https://www.github.com/jguleserian)
-- Frontend Mentor - [@yjguleserian](https://www.frontendmentor.io/profile/jguleserian)
+- Frontend Mentor - [@jguleserian](https://www.frontendmentor.io/profile/jguleserian)
 - LinkedIn - [@jeffguleserian](https://www.linkedin.com/jeffguleserian)
 
 ## Acknowledgments
