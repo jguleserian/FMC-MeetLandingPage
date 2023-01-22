@@ -1,0 +1,471 @@
+/* -----RESET & BOX Model----- */
+
+ :root {
+    /* --colors-- */
+    --turquoise: #4D96A9;
+    --purple: #855FB1;
+    --black: #28283D;
+    --gray: #87879D;
+    --lightblue: #8FE3F9;
+    --lilac: #D9B8FF;
+    --white: #FAFAFA;
+    /* --typography-- */
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* -----CONTAINERS (in order) GROUPED W/ CHILD CONTAINERS----- */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width: 1440px;
+    min-height: 1895px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+section.logo {
+    grid-column: 2/3;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+section.heading {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43.1rem;
+    width: 150.4rem;
+    margin: 1.5rem auto 0 auto;
+}
+
+div.group-chat {
+    display: flex;
+    flex-direction: column;
+    width: 54rem;
+    margin: 4.7rem 8.8rem 0 8.8rem;
+    align-items: center;
+    text-align: center;
+}
+
+div.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.2rem;
+}
+
+section.one {
+    grid-column: 2/3;
+    margin-top: 7.5rem;
+}
+
+div.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 5.6rem;
+    width: 5.6rem;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 2.8rem;
+    background-color: var(--white);
+}
+
+div.line {
+    height: 8.4rem;
+    width: 0;
+    margin: 0 auto 0 auto;
+    border: .5px solid var(--gray);
+    opacity: .25;
+}
+
+section.gallery {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    margin-top: 6.4rem;
+}
+
+section.gallery>img {
+    height: 24.2rem;
+    width: 25.5rem;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+section.built {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    align-items: center;
+    text-align: center;
+}
+
+section.two {
+    grid-column: 2/3;
+    height: 14rem;
+    width: 5.6rem;
+    margin: 7.2rem auto -2.8rem auto;
+    z-index: 1;
+}
+
+section.experience {
+    grid-column: 1/4;
+    height: 30.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D96A9;
+    z-index: 0;
+}
+
+div.image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/desktop/image-footer.jpg") no-repeat center center;
+    background-size: fit;
+    opacity: .1;
+    z-index: 1;
+}
+
+div.exp-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+/* -----ELEMENTS----- */
+
+a.exp-link {
+    margin-left: 6.39%;
+}
+
+button {
+    height: 5.8rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    border-radius: 2.9rem;
+    font-weight: 900;
+    border: none;
+}
+
+button.download1 {
+    width: 19.3rem;
+    background-color: var(--turquoise);
+}
+
+button.download1:hover {
+    background-color: #71C0D4;
+}
+
+button.download2 {
+    display: inline-block;
+    width: 19.3rem;
+    background-color: var(--purple);
+}
+
+button.download2:hover {
+    background-color: #B18BDD;
+}
+
+button.info {
+    width: 15.9rem;
+    background-color: var(--purple);
+    margin-left: 1.6rem;
+}
+
+button.info:hover {
+    background-color: #B18BDD;
+}
+
+h1.sr-only {
+    display: none;
+}
+
+h2.group {
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    width: 44.5rem;
+}
+
+h2.modern {
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: var(--turquoise);
+}
+
+h2.exp-heading {
+    display: inline-block;
+    width: 35rem;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    margin-left: 11.79%;
+    color: var(--white);
+}
+
+h3.smarter {
+    font-weight: 900;
+    font-size: 4.0rem;
+    width: 44.5rem;
+    line-height: 4.4rem;
+    color: var(--black);
+    margin-top: 1.6rem;
+}
+
+img.gallery {
+    border-radius: .8rem;
+}
+
+img.logo {
+    width: 119px;
+    height: 28px;
+}
+
+img.left-hero {
+    float: left;
+    margin-top: -2rem;
+}
+
+img.right-hero {
+    float: right;
+    margin-top: 6.1rem;
+}
+
+p.heading-text,
+p.send,
+p.stay {
+    width: 52.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: var(--gray);
+    margin-top: 3.4rem;
+}
+
+p.stay {
+    display: inline-block;
+    width: 35rem;
+    margin: 0 0 0 8.68%;
+    color: var(--white);
+}
+
+
+/* -----CLASSES & IDs----- */
+
+.dl1 {
+    color: var(--lightblue);
+}
+
+.dl2 {
+    color: var(--lilac);
+}
+
+@media only screen and (max-width: 765px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 76.5rem;
+    }
+    section.logo {
+        margin: 4.8rem auto 0 auto;
+        grid-column: unset;
+        display: flex;
+        justify-content: center;
+    }
+    section.heading {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 6.4rem;
+    }
+    picture {
+        width: 107.2%;
+        display: block;
+    }
+    img.left-hero {
+        margin: unset;
+    }
+    img.right-hero {
+        display: none;
+    }
+    div.group-chat {
+        width: 92.8%;
+        margin: 5.8rem 0 0 0;
+    }
+    div.button-group {
+        margin-top: 2.8rem;
+    }
+    h2.group {
+        width: 33.9rem;
+        font-size: 4.8rem;
+        line-height: 1em;
+    }
+    p.heading-text {
+        margin-top: 2.3rem;
+        width: 40.5rem;
+        font-size: 1.6rem;
+    }
+    button.info {
+        width: 13.9rem;
+    }
+    section.one {
+        margin-top: 7rem;
+    }
+    section.gallery {
+        margin-top: 6.2rem;
+    }
+    section.gallery>img {
+        width: 16.4rem;
+        height: auto;
+        margin: 0 .5rem 0 .5rem;
+    }
+    section.built {
+        margin-top: 4.5rem;
+    }
+    h3.smarter {
+        margin-top: 1.4rem;
+    }
+    p.send {
+        margin-top: 2.8rem;
+        width: 57.3rem;
+        font-size: 1.6rem;
+    }
+    section.two {
+        margin-top: 7rem;
+    }
+    section.experience {
+        flex-direction: column;
+        height: 42.8rem;
+        width: 100%;
+    }
+    div.image {
+        background: url("/assets/tablet/image-footer.jpg") no-repeat center center;
+    }
+    div.exp-group {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    h2.exp-heading {
+        margin-top: 9rem;
+        margin-left: 0;
+    }
+    p.stay {
+        margin-top: 3rem;
+        margin-left: 0;
+        width: 57.3rem;
+    }
+    button.download2 {
+        margin-top: 3.7rem;
+    }
+    a.exp-link {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    main {
+        max-width: 375px;
+    }
+    section.heading {
+        align-items: center;
+        height: auto;
+        margin-top: 5.2rem;
+    }
+    picture {
+        width: 110%;
+    }
+    picture img {
+        width: 41.4rem;
+        height: auto;
+    }
+    div.group-chat {
+        margin-top: 4.2rem;
+        width: 32.7rem;
+    }
+    h2.group {
+        width: 29rem;
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+    p.heading-text {
+        width: 32.7rem;
+        margin-top: 2.2rem;
+    }
+    div.button-group {
+        flex-direction: column;
+    }
+    button.info {
+        margin: 1.4rem 0 0 0;
+    }
+    section.one {
+        margin-top: 5.5rem;
+    }
+    section.gallery {
+        margin-top: 6rem;
+        flex-wrap: wrap;
+    }
+    section.gallery>img {
+        width: 15.1rem;
+        height: 14.3rem;
+        margin: 0 1.25rem 2rem 1.25rem;
+    }
+    section.built {
+        margin-top: 4.2rem;
+    }
+    h3.smarter {
+        width: 32.7rem;
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        margin-top: 2.2rem;
+    }
+    p.send {
+        margin-top: 2.9rem;
+        width: 32rem;
+    }
+    section.two {
+        margin-top: 5.4rem;
+    }
+    h2.exp-heading {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    p.stay {
+        margin-top: 2.2rem;
+        width: 32.7rem;
+    }
+    button.download2 {
+        margin-top: 3rem;
+    }
+}
